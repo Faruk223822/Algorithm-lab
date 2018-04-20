@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+int main (){
+    int a[]={25,31,23,9,6,8,71,35};
+    int n=8;
+    int flag=false;
+
+    for(int i=0; i<7; i++)
+    {
+        if(a[i]==n)
+        {
+            cout<<"print found at position"<<i<<endl;
+            flag=true;
+            break;
+        }
+
+
+    }
+if(flag=false)
+{
+    cout << "print not found"<<endl;
+}
+
+ return 0;
+
+}

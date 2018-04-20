@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+int main(){
+    int a[]={2,9,11,17,25,31,39,75};
+    int n=39;
+    int low=0;
+    int high=7;
+     while(low<=high){
+        int mid=(low+high)/2;
+        if (a[mid]==n){
+            cout<<"print found at pos" <<   mid   <<endl;
+            break;
+        }
+        if (a[mid]<n){
+
+            low=mid+1;
+        }else
+        high=mid-1;
+     }
+     if (low>high){
+        cout<<"print not found"<<endl;
+     }
+
+return 0;
+
+}
